@@ -10,19 +10,25 @@ The dataset originates from [DBLP](https://dblp.uni-trier.de/). To align with th
 
 This segment focuses on loading data into a **Neo4j** database. The loading process is facilitated by the [loading.py](property_graphs/loading.py) script. Queries for specific questions are stored in the [cypher](property_graphs/cypher) folder. For an in-depth explanation of the architecture, its extensibility, and the queries, refer to the [report](property_graphs/reports/report.pdf).
 
-![Neo4j Proposed Architecture](images/property_graph.png)
+<div align="center">
+  <img src="images/property_graph.png" alt="Neo4j Proposed Architecture" width="70%"/>
+</div>
 
 ## Distributed Graphs
 
 Here, the Think Like a Vertex (TLAV methodology is employed, using the **Pregel** framework for distributed graph processing. Algorithms for shortest-path (Dijkstra) and PageRank are implemented and can be found in the [src](distributed_graphs/src) folder. A comprehensive report detailing the approach, results, and conclusions is available in the [report](distributed_graphs/reports/report.pdf) file.
 
-![Pregel Framework: Supersteps](images/distributed_graph.png)
+<div align="center">
+  <img src="images/distributed_graph.png" alt="Pregel Framework: Supersteps" width="50%"/>
+</div>
 
 ## Knowledge Graphs
 
 In this part, data is ingested into a **GraphDB** database. The ABOX and TBOX definitions are housed in the [src](knowledge_graphs/src) folder. The ABOX construction code is in the [abox_definition.ipynb](knowledge_graphs/src/abox_definition.ipynb) file. The report, which includes the proposed TBOX and relevant queries, is located in the [report](knowledge_graphs/reports/report.pdf) file.
 
-![GraphDB TBOX Definition](images/knowledge_graph.png)
+<div align="center" style="background-color:white;">
+  <img src="images/knowledge_graph.png" alt="GraphDB TBOX Definition" width="70%"/>
+</div>
 
 ## Final Project
 
