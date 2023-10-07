@@ -1,0 +1,747 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.sdm.com/ontology#"
+     xml:base="http://www.sdm.com/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdm="http://www.sdm.com/ontology#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/spec/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://www.sdm.com/ontology#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.sdm.com/ontology#assigns -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.sdm.com/ontology#assigns">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.sdm.com/ontology#Chair"/>
+                    <rdf:Description rdf:about="http://www.sdm.com/ontology#Editor"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.sdm.com/ontology#Reviewer"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>assigns</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#authoredBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.sdm.com/ontology#authoredBy">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Paper"/>
+        <rdfs:range rdf:resource="http://www.sdm.com/ontology#Author"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>authoredBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#handledBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.sdm.com/ontology#handledBy">
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>handledBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#heldIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.sdm.com/ontology#heldIn">
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>heldIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#publishedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.sdm.com/ontology#publishedIn">
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>publishedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#relatedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.sdm.com/ontology#relatedTo">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.sdm.com/ontology#Paper"/>
+                    <rdf:Description rdf:about="http://www.sdm.com/ontology#Venue"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.sdm.com/ontology#KnowledgeArea"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>relatedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#reviewed -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.sdm.com/ontology#reviewed">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Paper"/>
+        <rdfs:range rdf:resource="http://www.sdm.com/ontology#Review"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>reviewed</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#submitedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.sdm.com/ontology#submitedBy">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Review"/>
+        <rdfs:range rdf:resource="http://www.sdm.com/ontology#Reviewer"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>submitedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#submittedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.sdm.com/ontology#submittedTo">
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>submittedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.sdm.com/ontology#abstract -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#abstract">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Paper"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>abstract</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#background -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#background">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#GeneralPaper"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>background</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#conciseness -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#conciseness">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#ShortPaper"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>conciseness</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#demo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#demo">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#DemoPaper"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>demo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#dimensions -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#dimensions">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Poster"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>dimensions</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#discussion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#discussion">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#FullPaper"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>discussion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#domain -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#domain">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#ExpertGroup"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>domain</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#edition -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#edition">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#ConferenceProceedings"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>edition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#experience -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#experience">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Reviewer"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>experience</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#hindex -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#hindex">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Author"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>hindex</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#house -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#house">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Editor"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>house</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.sdm.com/ontology#Conference"/>
+                    <rdf:Description rdf:about="http://www.sdm.com/ontology#Journal"/>
+                    <rdf:Description rdf:about="http://www.sdm.com/ontology#KnowledgeArea"/>
+                    <rdf:Description rdf:about="http://www.sdm.com/ontology#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#organizers -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#organizers">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Workshop"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>organizers</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#program -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#program">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Symposium"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>program</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#publisher -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#publisher">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Venue"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>publisher</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#reviewDecision -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#reviewDecision">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>reviewDecision</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#reviewText -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#reviewText">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>reviewText</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#role -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#role">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Chair"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>role</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#title">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#track -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#track">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#ConferencePaper"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>track</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sdm.com/ontology#volume -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.sdm.com/ontology#volume">
+        <rdfs:domain rdf:resource="http://www.sdm.com/ontology#JournalVolume"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>volume</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.sdm.com/ontology#Author -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Author">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#Person"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Author</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Chair -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Chair">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#Person"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Chair</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Conference -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Conference">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#Venue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#handledBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.sdm.com/ontology#Chair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Conference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#ConferencePaper -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#ConferencePaper">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#Paper"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#publishedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.sdm.com/ontology#ConferenceProceedings"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#submittedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.sdm.com/ontology#Conference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>ConferencePaper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#ConferenceProceedings -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#ConferenceProceedings">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#heldIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.sdm.com/ontology#Conference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>ConferenceProceedings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#DemoPaper -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#DemoPaper">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#GeneralPaper"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>DemoPaper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Editor -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Editor">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#Person"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Editor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#ExpertGroup -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#ExpertGroup">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#Conference"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>ExpertGroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#FullPaper -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#FullPaper">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#GeneralPaper"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>FullPaper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#GeneralPaper -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#GeneralPaper">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#Paper"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#publishedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.sdm.com/ontology#ConferenceProceedings"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#publishedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.sdm.com/ontology#JournalVolume"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#submittedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.sdm.com/ontology#Venue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>GeneralPaper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Journal -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Journal">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#Venue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#handledBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.sdm.com/ontology#Editor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Journal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#JournalVolume -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#JournalVolume">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#heldIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.sdm.com/ontology#Journal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>JournalVolume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#KnowledgeArea -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#KnowledgeArea">
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>KnowledgeArea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Paper -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Paper">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#authoredBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.sdm.com/ontology#Author"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#relatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.sdm.com/ontology#KnowledgeArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#reviewed"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.sdm.com/ontology#Review"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Person -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Person">
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Poster -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Poster">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#ConferencePaper"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Poster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Review -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Review">
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Reviewer -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Reviewer">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#Person"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Reviewer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#ShortPaper -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#ShortPaper">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#GeneralPaper"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>ShortPaper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Symposium -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Symposium">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#Conference"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Symposium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Venue -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Venue">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.sdm.com/ontology#relatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.sdm.com/ontology#KnowledgeArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Venue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sdm.com/ontology#Workshop -->
+
+
+    <owl:Class rdf:about="http://www.sdm.com/ontology#Workshop">
+        <rdfs:subClassOf rdf:resource="http://www.sdm.com/ontology#Conference"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.sdm.com/ontology#"/>
+        <rdfs:label>Workshop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.sdm.com/ontology#">
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>SDM Lab3 TBOX</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17) https://github.com/owlcs/owlapi/ -->
+
+
