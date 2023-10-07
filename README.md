@@ -1,4 +1,4 @@
-# Semantic Data Management for Scientific Articles
+# Semantic Data Management for Scientific Publications
 
 This repository houses the coursework divided into four key segments: Property Graphs (utilizing Neo4j), Distributed Graphs (leveraging Pregel), Knowledge Graphs (employing GraphDB), and a culminating project that integrates these graph databases for machine learning applications.
 
