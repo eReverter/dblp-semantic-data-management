@@ -14,7 +14,7 @@ This segment focuses on loading data into a **Neo4j** database. The loading proc
 
 ## Distributed Graphs
 
-Here, the Think Like a Vertex (TLAV methodology is employed, using the **Pregel** framework for distributed graph processing. Algorithms for shortest-path (Dijkstra) and PageRank are implemented and can be found in the [distributed_graphs/src](distributed_graphs/src) folder. A comprehensive report detailing the approach, results, and conclusions is available in the [report](distributed_graphs/reports/report.pdf) file.
+Here, the Think Like a Vertex (TLAV methodology is employed, using the **Pregel** framework for distributed graph processing. Algorithms for shortest-path (Dijkstra) and PageRank are implemented and can be found in the [src](distributed_graphs/src) folder. A comprehensive report detailing the approach, results, and conclusions is available in the [report](distributed_graphs/reports/report.pdf) file.
 
 ![Pregel Framework: Supersteps](images/distributed_graph.png)
 
